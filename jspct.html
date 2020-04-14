@@ -23,6 +23,7 @@
             <p class="lowOrHi"></p>
         </div>
 
+        <button>Press me</button>
 
         <script>
             let randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -101,4 +102,12 @@
         </script>
     </body>
 
+    <script>
+        const button = document.querySelector('button')
+
+        button.onclick = function() {
+            let name = prompt('What is your name?')
+            alert ('Hello ' + name + ',nice to see you!')
+        }
+    </script>
 </html>
